@@ -119,7 +119,7 @@
    margin: 0 auto;
  }
  
- .about-description, .projects, .contact {
+ .about-description, .projects {
    padding-top: 4em;
    padding-bottom: 4em;
  }
@@ -168,6 +168,11 @@
  
  .btn:hover {
    transform: scale(1.1);
+ }
+
+ .contact {
+   padding-top: 4em;
+   padding-bottom: 5em;
  }
  
  .contact-details {
