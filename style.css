@@ -96,10 +96,13 @@
    margin: 0 auto;
  }
  
- .projects {
-   background-color: #efefef;
+ .about-description, .projects, .contact {
    padding-top: 4em;
    padding-bottom: 4em;
+ }
+
+ .projects {
+   background-color: #efefef;
  }
  
  .project-tile-group {
@@ -142,11 +145,6 @@
  
  .btn:hover {
    transform: scale(1.1);
- }
- 
- .contact {
-   padding-top: 4em;
-   padding-bottom: 4em;
  }
  
  .contact-details {
