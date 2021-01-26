@@ -204,30 +204,10 @@
  /* ----- Media Queries ----- */
  
  @media (min-width: 600px) {
-   body {
-      font-size: 1.3rem;
-   }
-
-   h1 {
-      font-size: 4.2rem;
-   }
-
-   h2 {
-      font-size: 3.157rem;
-   }
-
-   h3 {
-      font-size: 2.369rem;
-   }
-
    .wrapper {
       width: 85%;
       margin: 0 auto;
    }
-
-   .about-tagline {
-      font-size: 1.6rem;
-    }
 
    .project-tile {
      width: 80%;
@@ -236,11 +216,19 @@
  
  @media (min-width: 900px) {
    body {
-      font-size: 1.414rem;
+      font-size: 1.3rem;
+   }
+
+   h1 {
+      font-size: 3.6rem;
+   }
+
+   h2 {
+      font-size: 2.7rem;
    }
 
    h3 {
-      font-size: 2.827rem;
+      font-size: 1.687rem;
    }
 
    .wrapper {
@@ -273,13 +261,13 @@
       padding-right: 1em;
    }
 
-   .about-tagline {
-      font-size: 1.9rem;
-   }
-
    .about-img {
       width: 350px;
       height: 350px;
+   }
+
+   .about-tagline {
+      font-size: 1.5rem;
    }
    
    .project-tile-group {
@@ -291,14 +279,18 @@
    }
 
    .btn {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
    }
  }
  
  @media (min-width: 1200px) {
    .wrapper {
      width: 80%;
-     max-width: 1300px;
+     max-width: 1200px;
+   }
+
+   .nav-item {
+      padding-right: 2em;
    }
    
    .about-container {
@@ -333,13 +325,17 @@
    h2 {
      font-size: 3rem;
    }
+
+   h3 {
+      font-size: 1.875rem;
+   }
    
    .about-tagline {
      font-size: 2rem;
    }
-   
+
    .about-img {
-     width: 500px;
-     height: 500px;
+      width: 400px;
+      height: 400px;
    }
- }}
+ }
