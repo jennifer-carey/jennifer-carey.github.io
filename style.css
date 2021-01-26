@@ -124,6 +124,17 @@
    padding-bottom: 4em;
  }
 
+ .about-description a {
+   display: inline;
+   text-decoration: underline;
+ }
+
+ .about-description a:hover {
+   font-weight: 700;
+   color: #ecaf44;
+   text-decoration: none;
+ }
+
  .projects {
    background-color: #efefef;
  }
