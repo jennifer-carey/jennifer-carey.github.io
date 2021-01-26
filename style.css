@@ -204,8 +204,33 @@
  /* ----- Media Queries ----- */
  
  @media (min-width: 600px) {
+   body {
+      font-size: 1.3rem;
+   }
+
+   h1 {
+      font-size: 4.2rem;
+   }
+
+   h2 {
+      font-size: 3.157rem;
+   }
+
+   h3 {
+      font-size: 2.369rem;
+   }
+
+   .wrapper {
+      width: 85%;
+      margin: 0 auto;
+   }
+
+   .about-tagline {
+      font-size: 1.6rem;
+    }
+
    .project-tile {
-     width: 70%;
+     width: 80%;
    }
  }
  
