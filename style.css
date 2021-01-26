@@ -38,7 +38,8 @@
  }
  
  h1 {
-   font-size: 3rem
+   font-size: 3rem;
+   color: #be2f29;
  }
  
  h2 {
@@ -57,9 +58,13 @@
 
  /* ----- Section Styles ----- */
  
+ header, .about-intro {
+   background-color: #23374f;
+   color: #fff;
+ }
+
  header {
-   background: #fff;
-   box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.1);
+   box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.2);
    position: sticky;
    top: 0;
  }
@@ -76,7 +81,7 @@
  .nav-link:hover,
  .contact-details:hover {
    font-weight: 700;
-   color: #eaaa00;
+   color: #be2f29;
  }
  
  .wrapper {
@@ -164,6 +169,8 @@
    font-size: 0.8rem;
    padding: 1em;
  }
+
+ /* ----- Media Queries ----- */
  
  @media (min-width: 600px) {
    .project-tile {
