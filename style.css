@@ -81,11 +81,13 @@
  
  .nav-list {
    margin: 0;
+   padding-bottom: 1em;
+   display: flex;
+   justify-content: space-around;
  }
  
  .nav-item {
    text-transform: uppercase;
-   padding-bottom: 0.5em;
  }
  
  .nav-link:hover,
