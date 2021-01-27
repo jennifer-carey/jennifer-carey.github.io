@@ -85,11 +85,7 @@
    display: flex;
    justify-content: space-around;
  }
- 
- .nav-item {
-   text-transform: uppercase;
- }
- 
+  
  .nav-link:hover,
  .contact-details:hover {
    font-weight: 700;
