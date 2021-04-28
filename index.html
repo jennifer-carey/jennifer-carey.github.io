@@ -1,107 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4508c3a97e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Jennifer Carey | Web Developer</title>
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://kit.fontawesome.com/4508c3a97e.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="style.css">
-   <title>Jennifer Carey | Web Developer</title>
-</head>
-
-<body>
-   <header>
+  <body>
+    <header>
       <nav class="nav-bar wrapper" id="navbar">
-         <h3 class="header-name">Jennifer Carey</h3>
-         <ul class="nav-list">
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-         </ul>
+        <h3 class="header-name"><a href="#home">Jennifer Carey</a></h3>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
       </nav>
-   </header>
+    </header>
 
-   <main>
-      <section class="about-intro">
-         <div class="wrapper about-container">
-            <div class="about-item-bio">
-               <h1>Hello, I'm Jennifer.</h1>
-               <p class="about-tagline">An aspiring web developer &amp software engineering student based in Liverpool,
-                  UK.</p>
-            </div>
-            <div class="about-item-img">
-               <img src="images/self-bw.jpg" alt="Jennifer Carey" class="about-img">
-            </div>
-         </div>
+    <main>
+      <section class="about-intro" id="home">
+        <div class="wrapper about-container">
+          <div class="about-item-bio">
+            <h1>Hello, I'm Jennifer.</h1>
+            <p class="about-tagline">
+              An aspiring web developer &amp software engineering student based
+              in Liverpool, UK.
+            </p>
+          </div>
+          <div class="about-item-img">
+            <img
+              src="images/self-bw.jpg"
+              alt="Jennifer Carey"
+              class="about-img"
+            />
+          </div>
+        </div>
       </section>
       <section id="about" class="about-description">
-         <div class="wrapper">
-            <h2>About me</h2>
-            <p>After a career as an accidental Digital Marketer in the travel industry, I've decided to merge my
-               knowledge of content writing and SEO with my curiosity for web development and UX.</p>
-            <p>I'm currently studying web development and software engineering on an immersive 12-week coding bootcamp
-               with Code Nation. I have come to realise that unlike most developers and my fellow students, I'm unique
-               in that I'm fuelled not by coffee but by copious mugs of tea.</p>
-            <p>The projects you'll see on my <a href="https://github.com/jennifer-carey" target="_blank">GitHub</a> and
-               <a href="https://codepen.io/jennyhmc/" target="_blank">CodePen</a> are an insight into my coding journey
-               so far.</p>
-         </div>
+        <div class="wrapper">
+          <h2>About me</h2>
+          <p>
+            After a career as an accidental Digital Marketer in the travel
+            industry, I've decided to merge my knowledge of content writing and
+            SEO with my curiosity for web development and UX.
+          </p>
+          <p>
+            I'm currently studying web development and software engineering on
+            an immersive 12-week coding bootcamp with Code Nation. I have come
+            to realise that unlike most developers and my fellow students, I'm
+            unique in that I'm fuelled not by coffee but by copious mugs of tea.
+          </p>
+          <p>
+            The projects you'll see on my
+            <a href="https://github.com/jennifer-carey" target="_blank"
+              >GitHub</a
+            >
+            and
+            <a href="https://codepen.io/jennyhmc/" target="_blank">CodePen</a>
+            are an insight into my coding journey so far.
+          </p>
+        </div>
       </section>
       <section id="projects" class="projects">
-         <div class="wrapper">
-            <h2>Some of my projects</h2>
-            <div class="project-tile-group flex-container">
-               <div class="project-tile flex-item">
-                  <a id="profile-link" href="https://codepen.io/jennyhmc/full/ExKzjNX" target="_blank">
-                     <img
-                        src="https://user-images.githubusercontent.com/61022039/95487640-7fda0c80-098c-11eb-98e5-48c4729d2349.JPG"
-                        alt="screen capture of landing page" class="card-img">
-                     <h3 class="card-title">Landing Page</h3>
-                  </a>
-               </div>
-               <div class="project-tile flex-item">
-                  <a id="profile-link" href="https://codepen.io/jennyhmc/full/jOqdaBe" target="_blank">
-                     <img
-                        src="https://user-images.githubusercontent.com/61022039/95487639-7e104900-098c-11eb-8041-5f05805a5194.JPG"
-                        alt="screen capture of survey form" class="card-img">
-                     <h3 class="card-title">Survey Form</h3>
-                  </a>
-               </div>
-               <div class="project-tile flex-item">
-                  <a id="profile-link" href="https://codepen.io/jennyhmc/full/vYKBRwP" target="_blank">
-                     <img
-                        src="https://user-images.githubusercontent.com/61022039/95487633-7c468580-098c-11eb-9557-89e2410718fb.JPG"
-                        alt="screen capture of technical document" class="card-img">
-                     <h3 class="card-title">Technical Document</h3>
-                  </a>
-               </div>
+        <div class="wrapper">
+          <h2>Some of my projects</h2>
+          <div class="project-tile-group flex-container">
+            <div class="project-tile flex-item">
+              <a
+                id="profile-link"
+                href="https://codepen.io/jennyhmc/full/ExKzjNX"
+                target="_blank"
+              >
+                <img
+                  src="https://user-images.githubusercontent.com/61022039/95487640-7fda0c80-098c-11eb-98e5-48c4729d2349.JPG"
+                  alt="screen capture of landing page"
+                  class="card-img"
+                />
+                <h3 class="card-title">Landing Page</h3>
+              </a>
             </div>
-            <a href="https://codepen.io/jennyhmc/" target="_blank" class="btn"><i class="fab fa-codepen"></i>See all
-               projects</a>
-         </div>
+            <div class="project-tile flex-item">
+              <a
+                id="profile-link"
+                href="https://codepen.io/jennyhmc/full/jOqdaBe"
+                target="_blank"
+              >
+                <img
+                  src="https://user-images.githubusercontent.com/61022039/95487639-7e104900-098c-11eb-8041-5f05805a5194.JPG"
+                  alt="screen capture of survey form"
+                  class="card-img"
+                />
+                <h3 class="card-title">Survey Form</h3>
+              </a>
+            </div>
+            <div class="project-tile flex-item">
+              <a
+                id="profile-link"
+                href="https://codepen.io/jennyhmc/full/vYKBRwP"
+                target="_blank"
+              >
+                <img
+                  src="https://user-images.githubusercontent.com/61022039/95487633-7c468580-098c-11eb-9557-89e2410718fb.JPG"
+                  alt="screen capture of technical document"
+                  class="card-img"
+                />
+                <h3 class="card-title">Technical Document</h3>
+              </a>
+            </div>
+          </div>
+          <a href="https://codepen.io/jennyhmc/" target="_blank" class="btn"
+            ><i class="fab fa-codepen"></i>See all projects</a
+          >
+        </div>
       </section>
       <section id="contact" class="contact">
-         <div class="wrapper">
-            <h2>Let's connect...</h2>
-            <div class="flex-container contact-links">
-               <a href="https://github.com/jennifer-carey" target="_blank" class="contact-details"><i
-                     class="fab fa-github"></i>Github</a>
-               <a href="https://twitter.com/JennifaCarey" target="_blank" class="contact-details"><i
-                     class="fab fa-twitter"></i>Twitter</a>
-               <a href="https://www.linkedin.com/in/jennifer-carey-25602166/" target="_blank" class="contact-details"><i
-                     class="fab fa-linkedin-in"></i>LinkedIn</a>
-               <a href="mailto:jennifacarey@gmail.com" target="_blank" class="contact-details"><i
-                     class="fas fa-envelope-square"></i>Email</a>
-            </div>
-         </div>
+        <div class="wrapper">
+          <h2>Let's connect...</h2>
+          <div class="flex-container contact-links">
+            <a
+              href="https://github.com/jennifer-carey"
+              target="_blank"
+              class="contact-details"
+              ><i class="fab fa-github"></i>Github</a
+            >
+            <a
+              href="https://twitter.com/JennifaCarey"
+              target="_blank"
+              class="contact-details"
+              ><i class="fab fa-twitter"></i>Twitter</a
+            >
+            <a
+              href="https://www.linkedin.com/in/jennifer-carey-25602166/"
+              target="_blank"
+              class="contact-details"
+              ><i class="fab fa-linkedin-in"></i>LinkedIn</a
+            >
+            <a
+              href="mailto:jennifacarey@gmail.com"
+              target="_blank"
+              class="contact-details"
+              ><i class="fas fa-envelope-square"></i>Email</a
+            >
+          </div>
+        </div>
       </section>
-   </main>
+    </main>
 
-   <footer>
-      <p>&copy;
-         <script>document.write(new Date().getFullYear())</script> Written and coded by Jennifer Carey
+    <footer>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Written and coded by Jennifer Carey
       </p>
-   </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
