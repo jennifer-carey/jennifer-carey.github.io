@@ -179,6 +179,15 @@ header {
   text-decoration: none;
 }
 
+.skills-section {
+  margin-top: 1rem;
+}
+
+.skills-tile-group i {
+  padding: 0.5rem 0;
+  font-size: 3rem;
+}
+
 .projects {
   background-color: #efefef;
 }
