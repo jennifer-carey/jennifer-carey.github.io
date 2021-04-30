@@ -284,6 +284,15 @@ footer p {
     flex-wrap: wrap;
   }
 
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-details {
+    width: 50%;
+  }
+
   .project-tile {
     width: 45%;
   }
@@ -313,11 +322,11 @@ footer p {
   }
 
   .nav-bar,
-  .flex-container {
+  .project-tile-group {
     display: flex;
   }
 
-  .flex-container {
+  .project-tile-group {
     justify-content: space-around;
   }
 
@@ -358,6 +367,14 @@ footer p {
 
   .btn {
     font-size: 1.5rem;
+  }
+
+  .contact-links {
+    flex-wrap: nowrap;
+  }
+
+  .contact-details {
+    width: 100%;
   }
 }
 
