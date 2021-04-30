@@ -279,8 +279,13 @@ footer p {
     width: 20%;
   }
 
+  .project-tile-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .project-tile {
-    width: 80%;
+    width: 45%;
   }
 }
 
@@ -349,14 +354,6 @@ footer p {
   .about-img {
     width: 350px;
     height: 350px;
-  }
-
-  .project-tile-group {
-    flex-wrap: wrap;
-  }
-
-  .project-tile {
-    width: 45%;
   }
 
   .btn {
