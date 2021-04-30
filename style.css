@@ -78,7 +78,7 @@ header {
   box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.2);
   position: sticky;
   top: 0;
-  padding: 0.7rem 0;
+  padding: 1rem 0;
   min-height: 8vh;
 }
 
@@ -179,6 +179,24 @@ header {
   text-decoration: none;
 }
 
+.skills-section {
+  margin-top: 1rem;
+}
+
+.skills-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-tile {
+  width: 50%;
+}
+
+.skills-tile-group i {
+  padding: 0.5rem 0;
+  font-size: 3rem;
+}
+
 .projects {
   background-color: #efefef;
 }
@@ -254,11 +272,29 @@ footer p {
   }
 
   header {
-    padding: 1rem 0;
+    padding: 1.3rem 0;
+  }
+
+  .skill-tile {
+    width: 20%;
+  }
+
+  .project-tile-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-details {
+    width: 50%;
   }
 
   .project-tile {
-    width: 80%;
+    width: 45%;
   }
 }
 
@@ -280,17 +316,20 @@ footer p {
   }
 
   .wrapper {
-    width: 85%;
     padding: 0;
-    margin: 0 auto;
   }
 
-  .nav-bar,
-  .flex-container {
+  header {
+    padding: 0;
     display: flex;
   }
 
-  .flex-container {
+  .nav-bar,
+  .project-tile-group {
+    display: flex;
+  }
+
+  .project-tile-group {
     justify-content: space-around;
   }
 
@@ -329,16 +368,16 @@ footer p {
     height: 350px;
   }
 
-  .project-tile-group {
-    flex-wrap: wrap;
-  }
-
-  .project-tile {
-    width: 45%;
-  }
-
   .btn {
     font-size: 1.5rem;
+  }
+
+  .contact-links {
+    flex-wrap: nowrap;
+  }
+
+  .contact-details {
+    width: 100%;
   }
 }
 
