@@ -76,10 +76,13 @@ header,
 
 header {
   box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.2);
-  position: sticky;
-  top: 0;
-  padding: 1rem 0;
-  min-height: 8vh;
+}
+
+.header-wrapper {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-name {
@@ -87,29 +90,65 @@ header {
   padding: 0;
 }
 
-.nav-bar {
+.menu-toggle {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: white;
+  height: 3px;
+  width: 1.5em;
+  border-radius: 3px;
+}
+
+.hamburger::before {
+  transform: translateY(-7px);
+}
+
+.hamburger::after {
+  transform: translateY(4px);
+}
+
+.open.hamburger {
+  transform: rotate(45deg);
+}
+
+.open.hamburger::before {
+  opacity: 0;
+}
+
+.open.hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: #23374f;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  z-index: 1;
+  transition: 500ms;
+}
+
+nav.show {
+  width: 100%;
 }
 
 .nav-list {
   margin: 0;
-  padding: 2em 0;
-  position: absolute;
-  right: 0;
-  height: 92vh;
-  top: 8vh;
-  background-color: #23374f;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  transform: translateX(100%);
-  transition: 500ms ease-in;
-}
-
-.nav-active {
-  transform: translateX(0%);
+  padding: 0;
+  text-align: center;
 }
 
 .nav-link {
@@ -124,19 +163,6 @@ header {
 .nav-link:hover,
 .contact-details:hover {
   color: #ecaf44;
-}
-
-.menu-icon {
-  display: block;
-  color: #fff;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.menu-btn {
-  padding: 0;
-  font-size: 1.6rem;
 }
 
 .wrapper {
@@ -265,14 +291,15 @@ footer p {
 
 /* ----- Media Queries ----- */
 
-@media (min-width: 600px) {
+@media (min-width: 767px) {
+  html {
+    font-size: 1.125rem;
+  }
+
+  .header-wrapper,
   .wrapper {
     width: 85%;
     margin: 0 auto;
-  }
-
-  header {
-    padding: 1.3rem 0;
   }
 
   .skill-tile {
@@ -298,69 +325,17 @@ footer p {
   }
 }
 
-@media (min-width: 900px) {
-  body {
-    font-size: 1.3rem;
-  }
-
-  h1 {
-    font-size: 3.6rem;
-  }
-
-  h2 {
-    font-size: 2.7rem;
-  }
-
-  h3 {
-    font-size: 1.687rem;
-  }
-
+@media (min-width: 1000px) {
   .wrapper {
     padding: 0;
   }
 
-  header {
-    padding: 0;
-    display: flex;
-  }
-
-  .nav-bar,
   .project-tile-group {
     display: flex;
   }
 
   .project-tile-group {
     justify-content: space-around;
-  }
-
-  .nav-bar {
-    justify-content: space-between;
-  }
-
-  .nav-list {
-    position: relative;
-    height: auto;
-    top: 0;
-    background-color: inherit;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    padding: 0;
-    transform: translateX(0%);
-  }
-
-  .nav-link {
-    padding: 0;
-  }
-
-  .nav-item {
-    padding-bottom: 0;
-    padding-right: 1em;
-  }
-
-  .menu-icon {
-    display: none;
   }
 
   .about-img {
@@ -382,13 +357,41 @@ footer p {
 }
 
 @media (min-width: 1200px) {
+  .header-wrapper,
   .wrapper {
     width: 80%;
     max-width: 1200px;
   }
 
-  .nav-item {
-    padding-right: 2em;
+  .menu-toggle {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    height: auto;
+    background: inherit;
+    display: block;
+    z-index: 0;
+    transition: none;
+  }
+
+  .nav-bar {
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0;
+    margin-left: 3em;
   }
 
   .about-container {
@@ -416,20 +419,8 @@ footer p {
 }
 
 @media (min-width: 1800px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 1.875rem;
-  }
-
-  .about-tagline {
-    font-size: 1.8rem;
+  html {
+    font-size: 1.25rem;
   }
 
   .about-img {
